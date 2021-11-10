@@ -86,7 +86,6 @@ const Details = (props) => {
                         <input placeholder="Meeting Title" id="title" type="text" value={title} onChange={e=>setTitle(e.target.value)} required/>
                     </div>
                     <div className="input-field col s6">
-                        {/* <input id="email1" type="email" placeholder="Email 1" value={email1} onChange={e=>setEmail1(e.target.value)} required/> */}
                         <select name="email1" id="email1" style={{display:"block",color:"green"}} onChange={(e)=>{setEmail1(e.target.value)}} value={email1}>
                             <option value="">Select Email1</option>
                             {emailList.map((i) => (
@@ -97,7 +96,6 @@ const Details = (props) => {
                         </select>
                     </div>
                     <div className="input-field col s6">
-                        {/* <input id="email2" type="email" placeholder="Email 2" value={email2} onChange={e=>setEmail2(e.target.value)} required/> */}
                         <select name="email2" id="email2" style={{display:"block",color:"green"}} onChange={(e)=>{setEmail2(e.target.value)}} value={email2}>
                             <option value="">Select Email2</option>
                             {emailList.map((i) => (
